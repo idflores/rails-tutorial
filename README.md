@@ -146,6 +146,7 @@ bin/rails generate controller <controller_name> <action_name>
     * Example: `db/migrate/YYYYMMDDHHMMSS_<action_name>_<model_name>.rb`
   * actions defined in Rails generated migration are *reversible*
 * includes data validation methods [documentation](http://guides.rubyonrails.org/active_record_validations.html)
+* supports [Active Record Association](http://guides.rubyonrails.org/association_basics.html)
 
 #### Generate Models
 
