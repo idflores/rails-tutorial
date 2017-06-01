@@ -91,14 +91,22 @@ bin/rails server
 
 Using your favorite browser (please! no IE), type [`localhost:3000`](http://localhost:3000)
 
+**Note:** the development server reloads your files on every save while in the development environment
+
 <br>
 
 <h3 align="center">Controller</h3>
 
+#### Highlights
+
 * handles requests for the given application
   * *routing* determines which controller receives which requests
+    * `config/routes.rb`
+    * [documentation](http://guides.rubyonrails.org/routing.html)
   * *action* collects and serves information to *views*
 * collects information
+* it is convention to implement CRUD actions in this order:
+  * index, show, new, edit, create, update, destroy
 
 #### Generate Controllers
 
@@ -112,9 +120,43 @@ bin/rails generate controller <controller_name> <action_name>
 
 <h3 align="center">View</h3>
 
+#### Highlights
+
 * handles how information is displayed
 * uses eRuby (Embedded Ruby) to write view templates
   * uses the `.erb` file extension
+
+<br>
+
+<h3 align="center">Model</h3>
+
+#### Highlights
+
+* manages databases for the application
+  * concept includes both `models/` and `db/` directories
+* [*migrations*](http://guides.rubyonrails.org/active_record_migrations.html) ruby classes designed to create and modify database tables
+  * Rails uses `rake` commands to run migrations
+  * naming convention includes a timestamp
+    * Example: `db/migrate/YYYYMMDDHHMMSS_<action_name>_<model_name>.rb`
+  * actions defined in Rails generated migration are *reversible*
+* includes data validation methods [documentation](http://guides.rubyonrails.org/active_record_validations.html)
+
+#### Generate Models
+
+Within the Rails application directory:
+```bash
+bin/rails generate model <model_name> <attribute>:<type>
+```
+**Note:** also generates an attribute called <attribute> of type <type> (optional)
+
+#### Run migrations
+
+Within the Rails application directory:
+```bash
+bin/rails db:migrate
+```
+**Note:** command only functional in the development environment
+
 
 <br>
 
