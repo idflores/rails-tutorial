@@ -10,9 +10,7 @@ Rails and Django share many concepts. For more conceptual notation, visit my <a 
 
 <h3 align="center">Discussion</h3>
 <p align="center">
-The philosophy between Rails and Django are incredibly similar. From my research, the differences that spawn Rails development over Django are mostly driven by opinion specifically when concerning [application routing](http://guides.rubyonrails.org/routing.html) and Rails "Convention over Configuration".
-
-The Rails "Convention over Configuration" is really the key philosophical difference, here, that drives the majority of programming differences between it and Django. By "Convention", Rails includes tools such as Coffeescript, Sass, and the [jQuery Unobtrusive Adapter](http://guides.rubyonrails.org/working_with_javascript_in_rails.html) out of the box.
+The philosophy between Rails and Django are incredibly similar. From my research, the differences that spawn Rails development over Django are mostly driven by opinion specifically when concerning <a href="http://guides.rubyonrails.org/routing.html">application routing</a> and Rails' "Convention over Configuration". This is really the key philosophical difference, here, that drives the majority of programming differences between it and Django. By "convention", Rails includes tools such as Coffeescript, Sass, and the <a href="http://guides.rubyonrails.org/working_with_javascript_in_rails.html">jQuery Unobtrusive Adapter</a> out of the box. However, Django's emphasis on user configuration seems to allow for more freedom for seasoned developers. 
 </p>
 
 <br>
