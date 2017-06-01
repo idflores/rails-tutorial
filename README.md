@@ -118,13 +118,17 @@ bin/rails generate controller <controller_name> <action_name>
 
 <br>
 
-<h3 align="center">View</h3>
+<h3 align="center">View & Templates</h3>
 
 #### Highlights
 
 * handles how information is displayed
 * uses eRuby (Embedded Ruby) to write view templates
   * uses the `.erb` file extension
+* supports [partial files](http://guides.rubyonrails.org/layouts_and_rendering.html) to prevent duplication in templates
+  * by convention, partial file names begin with an `_` (underscore)
+    * Example: `.../_<fileName>.html.erb`
+  * heavily uses [Resource-Oriented Style](http://api.rubyonrails.org/v5.1.1/classes/ActionView/Helpers/FormHelper.html#method-i-form_for-label-Resource-oriented+style)
 
 <br>
 
