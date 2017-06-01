@@ -164,6 +164,15 @@ bin/rails db:migrate
 ```
 **Note:** command only functional in the development environment
 
+<h3 align="center">Authentication</h3>
+
+#### Highlights
+
+* Rails supports basic HTTP Authentication
+* add-on authentication gems may also be used
+  * [Devise](https://github.com/plataformatec/devise) rails engine
+  * [Authlogic](https://github.com/binarylogic/authlogic)
+* More on [Rails Authentication & Security](http://guides.rubyonrails.org/security.html)
 
 <br>
 
