@@ -10,7 +10,7 @@ Rails and Django share many concepts. For more conceptual notation, visit my <a 
 
 <h3 align="center">Discussion</h3>
 <p align="center">
-The philosophy between Rails and Django are incredibly similar. From my research, the differences that spawn Rails development over Django are mostly driven by opinion specifically when concerning <a href="http://guides.rubyonrails.org/routing.html">application routing</a> and Rails' "Convention over Configuration". This is really the key philosophical difference, here, that drives the majority of programming differences between it and Django. By "convention", Rails includes tools such as Coffeescript, Sass, and the <a href="http://guides.rubyonrails.org/working_with_javascript_in_rails.html">jQuery Unobtrusive Adapter</a> out of the box. However, Django's emphasis on user configuration seems to allow for more freedom for seasoned developers. 
+The philosophy between Rails and Django are incredibly similar. From my research, the differences that spawn Rails development over Django are mostly driven by opinion specifically when concerning <a href="http://guides.rubyonrails.org/routing.html">application routing</a> and Rails' "Convention over Configuration". This is really the key philosophical difference, here, that drives the majority of programming differences between it and Django. By "convention", Rails includes tools such as Coffeescript, Sass, and the <a href="http://guides.rubyonrails.org/working_with_javascript_in_rails.html">jQuery Unobtrusive Adapter</a> out of the box. However, Django's emphasis on user configuration seems to allow for more freedom for seasoned developers.
 </p>
 
 <br>
@@ -33,17 +33,14 @@ from: [https://brew.sh](https://brew.sh)
 
 **Note:** in order to completely remove `RVM`, I had to modify my `$PATH` by:
 1. perform `echo $PATH` in your terminal
-2. copy the output and remove all directories including `.../.rvm/...`
+2. copy the output and remove all directories including `.../.rvm/...` in a text editor
 3. copy the new `$PATH`
-4. open `~/.profile`
-    * type `atom ~/.profile` in Terminal (or iTerm) to use the Atom editor
-5. add the following
+4. perform command in terminal
 ```bash
-# ~/.profile
-export $PATH="<the_modified_path>"
+export PATH=<paste_new_$PATH>
 ```
-6. restart Terminal (or iTerm)
-7. check `gem` is pointing to the right directory using:
+5. restart Terminal (or iTerm)
+6. check `gem` is pointing to the right directory using:
 ```bash
 gem env home
 # /Users/<username>/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0
